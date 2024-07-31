@@ -1,14 +1,10 @@
 <script setup>
-  const text = ref('')
-  onMounted(async () => {
-    const {data} = await useFetch('/api/test')
-    text.value = data.value
-  })
+  const {data} = await useFetch('/api/test')
 </script>
 
 <template>
   <div>
-    Home {{text}}
+    Home <span>{{data}}</span>
   </div>
   <div>
     <NuxtLink to="/about">about</NuxtLink>
