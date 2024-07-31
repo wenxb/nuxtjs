@@ -1,10 +1,8 @@
 <script setup>
 const time = ref('')
 
-onMounted(async () => {
-  const {data} = await useHttp('/api/test')
-  time.value = data.value
-})
+const {data} = await useHttp('/api/test')
+time.value = data.value
 </script>
 
 <template>
