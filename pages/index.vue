@@ -1,5 +1,5 @@
 <script setup>
-  const {data} = await useFetch('/api/test')
+  const {data} = await useHttp('/api/test')
 </script>
 
 <template>

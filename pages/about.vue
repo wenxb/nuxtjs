@@ -2,7 +2,7 @@
 const time = ref('')
 
 onMounted(async () => {
-  const {data} = await useFetch('/api/test')
+  const {data} = await useHttp('/api/test')
   time.value = data.value
 })
 </script>
