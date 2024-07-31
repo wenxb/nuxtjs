@@ -4,5 +4,6 @@ export default defineNuxtConfig({
   routeRules: {
     // prerender index route by default
     '/': { prerender: true },
+    '/api/**': {cors: true},
   },
 });
