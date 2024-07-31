@@ -1,4 +1,7 @@
 <script setup>
+useSeoMeta({
+  title: 'About Us',
+})
 const time = ref('')
 
 const {data} = await useHttp('/api/test')
