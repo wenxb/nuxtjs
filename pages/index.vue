@@ -2,7 +2,7 @@
   const text = ref('')
   onMounted(async () => {
     const {data} = await useFetch('/api/test')
-    text.value = data
+    text.value = data.value
   })
 </script>
 
