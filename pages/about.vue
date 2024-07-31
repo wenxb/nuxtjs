@@ -1,10 +1,16 @@
-<script setup lang="ts">
+<script setup>
+const time = ref('')
 
+onMounted(async () => {
+  const {data} = await useFetch('/api/test')
+  time.value = data.value
+})
 </script>
 
 <template>
   <div>
     About Page
+    <div>{{time}}</div>
   </div>
 </template>
 
