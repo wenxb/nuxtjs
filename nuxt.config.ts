@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '/api/**': {cors: true},
   },
 
-  modules: ['nuxt-security'],
+  modules: ['nuxt-security', '@nuxt/content'],
 
   security: {
     headers: false,

@@ -8,6 +8,10 @@
   </div>
   <div>
     <NuxtLink to="/about">about</NuxtLink>
+
+  </div>
+  <div>
+    <NuxtLink to="/tool">Tool</NuxtLink>
   </div>
 </template>
 
